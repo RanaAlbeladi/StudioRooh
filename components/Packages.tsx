@@ -5,7 +5,11 @@ import SectionTitle from './SectionTitle';
 export default function Packages() {
   return (
     <section id="packages" className="desktop-detail section-block">
-      <SectionTitle eyebrow="OUR PACKAGES" title="باقاتنا" />
+      <SectionTitle
+  eyebrow="OUR PACKAGES"
+  title="باقاتنا"
+  subtitle=""
+/>
 
       <div className="package-grid">
         {packages.map((p) => (

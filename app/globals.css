@@ -17,3 +17,4 @@
 .mobile-socials{display:flex;gap:20px;color:var(--blue);padding-top:4px}
 @media(max-width:900px){.scribble{transform:translateX(-72px) rotate(-4deg);}}
 @media(max-width:640px){.scribble{transform:translateX(-34px) rotate(-4deg)}.simple-footer{min-height:90px;padding:22px}.socials{display:none}}
+

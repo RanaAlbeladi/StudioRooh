@@ -19,3 +19,286 @@
 @media(max-width:900px){.scribble{transform:translateX(-72px) rotate(-4deg);}}
 @media(max-width:640px){.scribble{transform:translateX(-34px) rotate(-4deg)}.simple-footer{min-height:90px;padding:22px}.socials{display:none}}
 
+/* ================================
+   THEMES PAGE
+================================ */
+
+.themes-section{
+  position:relative;
+  padding:70px 7vw 100px;
+  overflow:hidden;
+}
+
+/* ---------- Heading ---------- */
+
+.themes-heading{
+  position:relative;
+  width:min(650px,90%);
+  min-height:230px;
+  margin:0 auto 35px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.themes-eyebrow{
+  color:#8ca6ba;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:4px;
+  margin-bottom:10px;
+}
+
+.themes-heading h1{
+  position:relative;
+  z-index:2;
+  margin:0;
+  color:var(--blue);
+  font-family:"Tajawal",sans-serif;
+  font-size:58px;
+  font-weight:800;
+  line-height:1.2;
+}
+
+/* ---------- Decorations ---------- */
+
+.theme-decoration{
+  position:absolute;
+  user-select:none;
+  pointer-events:none;
+  line-height:1;
+}
+
+.cloud{
+  color:#d9edfb;
+  font-size:65px;
+  opacity:.95;
+}
+
+.cloud-left{
+  left:50px;
+  bottom:28px;
+}
+
+.cloud-right{
+  right:55px;
+  bottom:18px;
+}
+
+.star{
+  color:#f7bf3f;
+}
+
+.star-one{
+  font-size:24px;
+  left:135px;
+  top:43px;
+}
+
+.star-two{
+  font-size:22px;
+  right:145px;
+  top:38px;
+}
+
+.star-three{
+  font-size:20px;
+  right:65px;
+  bottom:65px;
+}
+
+.heart{
+  color:#ff9bbb;
+}
+
+.heart-one{
+  font-size:34px;
+  left:185px;
+  top:20px;
+}
+
+.heart-two{
+  font-size:27px;
+  right:195px;
+  top:28px;
+  color:#ffc4ce;
+}
+
+.heart-three{
+  font-size:24px;
+  left:155px;
+  bottom:42px;
+  color:#ffc4ce;
+}
+
+/* ---------- Theme cards ---------- */
+
+.themes-page-grid{
+  width:min(1250px,100%);
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:28px;
+}
+
+.theme-clickable-card{
+  display:block;
+  overflow:hidden;
+  border:10px solid rgba(255,255,255,.9);
+  border-radius:28px;
+  background:#fff;
+  color:inherit;
+  text-decoration:none;
+  box-shadow:0 12px 35px rgba(34,76,105,.08);
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.theme-clickable-card:hover{
+  transform:translateY(-7px);
+  box-shadow:0 18px 42px rgba(34,76,105,.14);
+}
+
+.theme-image-wrapper{
+  overflow:hidden;
+  border-radius:18px;
+  background:
+    radial-gradient(circle at 20% 20%,#fff0b9 0 11%,transparent 12%),
+    radial-gradient(circle at 75% 65%,#f8d7e6 0 14%,transparent 15%),
+    linear-gradient(135deg,#fff0f4,#dcecff);
+}
+
+.theme-image-wrapper img{
+  display:block;
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  transition:transform .35s ease;
+}
+
+.theme-clickable-card:hover .theme-image-wrapper img{
+  transform:scale(1.025);
+}
+
+.theme-card-content{
+  padding:22px 20px 24px;
+  direction:rtl;
+  text-align:right;
+}
+
+.theme-card-content h3{
+  margin:0 0 9px;
+  color:var(--blue);
+  font-family:"Tajawal",sans-serif;
+  font-size:22px;
+  font-weight:800;
+}
+
+.theme-card-content p{
+  margin:0 0 15px;
+  color:#71869a;
+  font-size:15px;
+  line-height:1.8;
+}
+
+.theme-details-link{
+  color:var(--blue);
+  font-weight:700;
+}
+
+/* ---------- Tablet ---------- */
+
+@media(max-width:900px){
+
+  .themes-section{
+    padding:55px 5vw 80px;
+  }
+
+  .themes-page-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .themes-heading h1{
+    font-size:50px;
+  }
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:640px){
+
+  .themes-section{
+    display:block !important;
+    padding:35px 20px 60px;
+  }
+
+  .themes-heading{
+    width:100%;
+    min-height:180px;
+    margin-bottom:20px;
+  }
+
+  .themes-heading h1{
+    font-size:42px;
+  }
+
+  .themes-eyebrow{
+    font-size:11px;
+    letter-spacing:3px;
+  }
+
+  .themes-page-grid{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  .theme-clickable-card{
+    border-width:7px;
+    border-radius:23px;
+  }
+
+  .theme-image-wrapper img{
+    height:220px;
+  }
+
+  .cloud{
+    font-size:45px;
+  }
+
+  .cloud-left{
+    left:5px;
+    bottom:20px;
+  }
+
+  .cloud-right{
+    right:5px;
+    bottom:15px;
+  }
+
+  .star-one{
+    left:45px;
+  }
+
+  .star-two{
+    right:45px;
+  }
+
+  .star-three{
+    right:20px;
+  }
+
+  .heart-one{
+    left:85px;
+  }
+
+  .heart-two{
+    right:85px;
+  }
+
+  .heart-three{
+    left:50px;
+  }
+}

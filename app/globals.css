@@ -75,50 +75,50 @@
   pointer-events: none;
 }
 
-.themes-cloud-left ,
-.themes-cloud-right {
+.themes-page-cloud-left ,
+.themes-page-cloud-right {
   color: #d9edfb;
   font-size: 64px;
 }
 
-.themes-cloud-left {
+.themes-page-cloud-left {
   left: 30px;
   bottom: 10px;
 }
 
-.themes-cloud-right {
+.themes-page-cloud-right {
   right: 30px;
   bottom: 2px;
 }
 
-.star-left,
-.star-right {
+.themes-page-star-left,
+.themes-page-star-right {
   color: #f5bd3e;
   font-size: 24px;
 }
 
-.star-left {
+.themes-page-star-left {
   left: 125px;
   top: 15px;
 }
 
-.star-right {
+.themes-page-star-right {
   right: 115px;
   top: 22px;
 }
 
-.heart-left,
-.heart-right {
+.themes-page-heart-left,
+.themes-page-heart-right {
   color: #ff9dbb;
   font-size: 32px;
 }
 
-.heart-left {
+.themes-page-heart-left {
   left: 175px;
   top: 0;
 }
 
-.heart-right {
+.themes-page-heart-right {
   right: 165px;
   top: 3px;
   color: #ffc1ce;
@@ -285,34 +285,46 @@
     height: 220px;
   }
 
-  .themes-cloud-left ,
-  .themes-cloud-right {
+  .themes-page-cloud-left ,
+  .themes-page-cloud-right {
     font-size: 43px;
   }
 
-  .themes-cloud-left {
+  .themes-page-cloud-left {
     left: 0;
   }
 
-  .themes-cloud-right {
+  .themes-page-cloud-right {
     right: 0;
   }
 
-  .star-left {
+  .themes-page-star-left {
     left: 50px;
   }
 
-  .star-right {
+  .themes-page-star-right {
     right: 45px;
   }
 
-  .heart-left {
+  .themes-page-heart-left {
     left: 90px;
     font-size: 25px;
   }
 
-  .heart-right {
+  .themes-page-heart-right {
     right: 85px;
     font-size: 25px;
   }
 }
+
+
+/* Review fixes: isolate Themes page + clickable Home cards */
+.home-theme-card-link{display:block;color:inherit;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease;cursor:pointer}
+.home-theme-card-link:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(33,65,95,.10)}
+.home-theme-cta{display:inline-block;margin:0 8px 8px;font-size:14px;color:#51779b;font-weight:700}
+.action-card{cursor:pointer}
+.action-card:focus-visible,.home-theme-card-link:focus-visible,.themes-page-card:focus-visible{outline:3px solid #f3b8cc;outline-offset:4px}
+.simple-footer{display:flex;justify-content:space-between;align-items:center;min-height:112px;padding:26px 6vw;direction:rtl}
+.simple-footer .footer-brand{color:var(--blue);font-weight:700;font-size:18px}
+.simple-footer .footer-social{display:flex;justify-content:flex-start;gap:24px;direction:ltr}
+@media(max-width:640px){.simple-footer{min-height:90px;padding:22px;flex-direction:row;text-align:initial}.simple-footer .footer-social{justify-content:flex-start}}

@@ -15,15 +15,15 @@ export default function ThemesPage() {
           <span className="themes-page-eyebrow">OUR THEMES</span>
 
           <div className="themes-title-art">
-            <span className="themes-deco cloud-left">☁</span>
-            <span className="themes-deco star-left">★</span>
-            <span className="themes-deco heart-left">♥</span>
+            <span className="themes-deco themes-page-cloud-left">☁</span>
+            <span className="themes-deco themes-page-star-left">★</span>
+            <span className="themes-deco themes-page-heart-left">♥</span>
 
             <h1>ثيماتنا</h1>
 
-            <span className="themes-deco heart-right">♥</span>
-            <span className="themes-deco star-right">★</span>
-            <span className="themes-deco cloud-right">☁</span>
+            <span className="themes-deco themes-page-heart-right">♥</span>
+            <span className="themes-deco themes-page-star-right">★</span>
+            <span className="themes-deco themes-page-cloud-right">☁</span>
           </div>
         </div>
 

@@ -3,5 +3,28 @@ import Footer from '@/components/Footer';
 import Packages from '@/components/Packages';
 
 export default function PackagesPage(){
-  return <main><Header/><section className="inner-hero"><span>OUR PACKAGES</span><h1>باقاتنا</h1><p>تفاصيل واضحة وأسعار واضحة، ثم تنتقلين للحجز واختيار الثيمات والموعد.</p></section><div className="page-show-desktop-detail"><Packages/></div><section className="booking-help"><h2>كيف أكمل الحجز؟</h2><p>بعد اختيار الباقة، تنتقلين لصفحة الحجز لاختيار الثيمات المتاحة ثم الموعد وإدخال البيانات ودفع العربون.</p></section><Footer/></main>
+  return (
+    <main>
+      <Header/>
+
+      <section className="packages-page-heading">
+        <span className="packages-page-eyebrow">OUR PACKAGES</span>
+        <div className="packages-title-art">
+          <span className="packages-deco packages-cloud-left">☁</span>
+          <span className="packages-deco packages-star-left">★</span>
+          <span className="packages-deco packages-heart-left">♥</span>
+          <h1>باقاتنا</h1>
+          <span className="packages-deco packages-heart-right">♥</span>
+          <span className="packages-deco packages-star-right">★</span>
+          <span className="packages-deco packages-cloud-right">☁</span>
+        </div>
+      </section>
+
+      <div className="page-show-desktop-detail packages-page-content">
+        <Packages/>
+      </div>
+
+      <Footer/>
+    </main>
+  );
 }

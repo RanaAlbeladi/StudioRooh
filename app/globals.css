@@ -362,3 +362,27 @@
   .td-cloud-left,.td-cloud-right{font-size:42px}.td-cloud-left{left:0}.td-cloud-right{right:0}.td-star-left{left:42px}.td-star-right{right:40px}.td-heart-left{left:82px;font-size:24px}.td-heart-right{right:78px;font-size:24px}
   .theme-detail-list{padding:0 18px}.theme-detail{gap:20px;border-radius:25px;padding:12px}.theme-detail-slide{flex-basis:92%}.theme-detail-slide img{height:255px;border-radius:19px}.theme-detail-content{padding:2px 5px 8px}.theme-detail-content h2{font-size:27px}.theme-description{font-size:14px}.theme-components-list span{font-size:12px}
 }
+
+/* ========================================
+   PACKAGES PAGE - isolated heading styles
+======================================== */
+.packages-page-heading{text-align:center;padding:62px 20px 38px;overflow:hidden}
+.packages-page-eyebrow{display:block;margin-bottom:12px;color:#8fa8bc;font-size:13px;font-weight:700;letter-spacing:4px}
+.packages-title-art{position:relative;width:min(620px,92%);min-height:145px;margin:auto;display:flex;align-items:center;justify-content:center}
+.packages-title-art h1{position:relative;z-index:2;margin:0;color:var(--blue);font-family:"Tajawal",sans-serif;font-size:58px;font-weight:800;line-height:1.15}
+.packages-deco{position:absolute;line-height:1;pointer-events:none;user-select:none}
+.packages-cloud-left,.packages-cloud-right{color:#d9edfb;font-size:62px}
+.packages-cloud-left{left:24px;bottom:8px}.packages-cloud-right{right:24px;bottom:0}
+.packages-star-left,.packages-star-right{color:#f5bd3e;font-size:23px}
+.packages-star-left{left:120px;top:17px}.packages-star-right{right:112px;top:22px}
+.packages-heart-left,.packages-heart-right{color:#ff9dbb;font-size:30px}
+.packages-heart-left{left:172px;top:0}.packages-heart-right{right:162px;top:3px;color:#ffc1ce}
+/* Packages component is also used on Home; hide only its duplicate heading on the dedicated Packages page. */
+.packages-page-content .section-title{display:none}
+.packages-page-content .section-block{padding-top:0}
+@media(max-width:900px){.packages-title-art h1{font-size:50px}}
+@media(max-width:640px){
+  .packages-page-heading{padding:38px 18px 25px}.packages-page-eyebrow{font-size:11px;letter-spacing:3px}.packages-title-art{min-height:120px;width:100%}.packages-title-art h1{font-size:40px}
+  .packages-cloud-left,.packages-cloud-right{font-size:42px}.packages-cloud-left{left:0}.packages-cloud-right{right:0}
+  .packages-star-left{left:42px}.packages-star-right{right:40px}.packages-heart-left{left:82px;font-size:24px}.packages-heart-right{right:78px;font-size:24px}
+}

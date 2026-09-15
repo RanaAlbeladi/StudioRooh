@@ -10,7 +10,7 @@
 @media(max-width:900px){.theme-grid-page{grid-template-columns:repeat(2,1fr)}.theme-detail{grid-template-columns:1fr}.booking-steps{grid-template-columns:repeat(2,1fr)}.scribble{transform:translateX(-32px) rotate(-4deg)}}
 @media(max-width:640px){.inner-hero{padding:44px 22px 28px}.inner-hero h1{font-size:40px}.inner-hero p{font-size:16px}.theme-grid-page{grid-template-columns:1fr}.theme-detail-list{padding:0 18px}.theme-detail-photo img{height:260px}.page-show-desktop-detail .desktop-detail{display:block}.page-show-desktop-detail .package-grid{grid-template-columns:1fr}.booking-page{padding:0 18px}.booking-location-notice{padding:20px;gap:12px}.booking-location-notice strong{font-size:19px}.booking-location-notice p{font-size:15px}.booking-steps{grid-template-columns:1fr}.scribble{transform:translateX(-18px) rotate(-4deg)}.footer-contact{align-items:center}}
 
-/* Home review v3 */
+/* Home review v3 */ 
 .brand strong,.desktop-nav,.hero-copy h1,.hero-copy h2,.action-card h3,.action-card span,.section-title h2,.theme-card h3,.package-top h3,.package-card>a,.inner-hero h1,.theme-detail h2,.primary-btn,.booking-help h2,.booking-location-notice strong,.booking-steps h3,.booking-coming h2{   font-family:"Tajawal",sans-serif;   font-weight:700; }
 .scribble{transform:translateX(-105px) rotate(-4deg);}
 .socials a,.footer-social a,.mobile-socials a{display:grid;place-items:center;color:var(--blue);transition:transform .2s ease,opacity .2s ease}.socials a:hover,.footer-social a:hover,.mobile-socials a:hover{transform:translateY(-2px);opacity:.75}
@@ -75,18 +75,18 @@
   pointer-events: none;
 }
 
-.cloud-left,
-.cloud-right {
+.themes-cloud-left ,
+.themes-cloud-right {
   color: #d9edfb;
   font-size: 64px;
 }
 
-.cloud-left {
+.themes-cloud-left {
   left: 30px;
   bottom: 10px;
 }
 
-.cloud-right {
+.themes-cloud-right {
   right: 30px;
   bottom: 2px;
 }
@@ -285,16 +285,16 @@
     height: 220px;
   }
 
-  .cloud-left,
-  .cloud-right {
+  .themes-cloud-left ,
+  .themes-cloud-right {
     font-size: 43px;
   }
 
-  .cloud-left {
+  .themes-cloud-left {
     left: 0;
   }
 
-  .cloud-right {
+  .themes-cloud-right {
     right: 0;
   }
 
